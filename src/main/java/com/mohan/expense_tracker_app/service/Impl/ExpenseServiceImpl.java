@@ -7,11 +7,13 @@ import com.mohan.expense_tracker_app.mapper.ExpenseMapper;
 import com.mohan.expense_tracker_app.repository.CategoryRepository;
 import com.mohan.expense_tracker_app.repository.ExpenseRepository;
 import com.mohan.expense_tracker_app.service.ExpenseService;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class ExpenseServiceImpl implements ExpenseService {
 
     private ExpenseRepository expenseRepository;
